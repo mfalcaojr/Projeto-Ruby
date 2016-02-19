@@ -1,0 +1,18 @@
+<h1>Listing Users</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Autor</th>
+    </tr>
+    
+    <% @users.each do |user| %>
+            <tr>
+                <td><%=user.title%></td>
+                <td><%=user.author%></td>
+            </td>
+    <%end%>
+    
+    <%=link_to 'Cadastrar user', new_user_path%>
+    
+</table>

@@ -1,0 +1,14 @@
+<p>
+  <strong>Title</strong>
+   <%=@user.title%>
+<p>
+
+<p>
+  <strong>Author</strong>
+   <%=@user.author%>
+<p>
+  
+  <%= link_to 'Listar users', users_path %>
+  
+  <%= link_to 'Editar', edit_user_path(@user) %>
+

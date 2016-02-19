@@ -1,0 +1,14 @@
+<h1>Listing Users</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Autor</th>
+    </tr>
+    
+<%@user.each do |user| %>
+
+<tr>
+    <td><%=user.title%></td>
+    <td><%=user.author%></td>
+    <td><%=user.link_to 'Destroy',user_path(user)%></td>
